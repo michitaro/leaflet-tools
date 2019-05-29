@@ -11,4 +11,5 @@ const map = new L.Map(this.$refs.map, { crs: L.CRS.Simple })
 const layer = L.tileLayer(`./tiles/{z}/{y}/{x}.png`)
 
 map.addLayer(layer)
+map.setView([0, 0], 0)
 ```
