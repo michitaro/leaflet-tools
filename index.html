@@ -1,0 +1,28 @@
+<script src="./leaflet/leaflet.js"></script>
+<link rel="stylesheet" href="./leaflet/leaflet.css" />
+<script>
+window.addEventListener('load', () => {
+  const el = document.querySelector('.map')
+  const map = new L.Map(el, { crs: L.CRS.Simple })
+  const layer = L.tileLayer(`./color/{z}/{y}/{x}.png`)
+  map.addLayer(layer)
+  map.setView([0, 0], 1)
+})
+</script>
+
+<style>
+.map {
+  height: 100%;
+  width: 100%;
+}
+
+.leaflet-container {
+  background-color: #111;
+}
+
+body {
+  margin: 0;
+}
+</style>
+
+<div class="map"></div>
