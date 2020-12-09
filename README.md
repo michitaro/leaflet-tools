@@ -1,3 +1,12 @@
+# Leaflet Tools
+These scripts can be used to make [Leaflet](https://leafletjs.com) tiles from a large large image.
+
+## Usage
+```sh
+$ python tilize.py -o tiles large-image.png
+```
+
+```html
 <html>
 
 <head>
@@ -22,3 +31,4 @@
 </body>
 
 </html>
+```
